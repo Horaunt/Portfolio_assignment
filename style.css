@@ -4,19 +4,20 @@
     --body-color: #B7B5B3;
     --color-white: rgb(255, 255, 255);
     --text-color-second: rgb(68, 68, 68);
-    --text-color-third: #6B2B06;
-    --first-color: #B80C09;
+    --text-color-third: #26a100;
+    --first-color: #002f03;
     --first-color-hover: #E5E7E6;
-    --second-color: #6B2B06;
+    --second-color: #26a100;
     --third-color: #141301;
     --first-shadow-color: rgba(0, 0, 0, 0.1);
     
     /* Dark mode variables */
-    --dark-body-color: #333;
-    --dark-text-color: #E5E7E6;
-    --dark-first-color: #222;
-    --dark-second-color: #444;
-    --dark-third-color: #555;
+    --dark-body-color: #000000;
+    --dark-text-color: #1fea00;
+    --dark-first-color: #002f03;
+    --dark-second-color: #1c6000;
+    --dark-third-color: #42ff08;
+	--color-wh1: #ffffff;
 }
 
 *{
@@ -80,6 +81,7 @@ body.dark-mode {
     --first-color-hover: var(--dark-second-color);
     --second-color: var(--dark-second-color);
     --third-color: var(--dark-third-color);
+	--color-wh1: #000000;
 }
 
 .container{
@@ -181,7 +183,7 @@ nav{
 }
 .featured-text-card span{
 	background: var(--third-color);
-	color: var(--color-white);
+	color: var(--color-wh1);
 	padding: 3px 8px;
 	font-size: 12px;
 	border-radius: 5px;
@@ -329,7 +331,7 @@ h3{
 .about-info p{
 	text-align: center;
 	font-size: 15px;
-	color: #777;
+	color: #444444;
 }
 .about-btn button{
 	position: absolute;
@@ -383,14 +385,9 @@ h3{
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
 }
-.project-box>i{
-    font-size: 50px;
-    color: #00B5E7;
-    margin-bottom: 25px;
-}
 .project-box h3{
     font-size: 15px;
-    color: #777;
+    color: #000000;
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -419,7 +416,6 @@ h3{
 .contact-info:hover.contact-info::after{
     bottom: 0;
 }
-.project-box:hover.project-box i,
 .project-box:hover.project-box>h3,
 .project-box:hover.project-box>label{
     color: var(--color-white);
@@ -689,7 +685,16 @@ footer.dark-mode {
 }
 
 .featured-name.dark-mode {
-    color: var(--dark-text-color);
+    color: #6b2b06;
+}
+
+.featured-text-info.dark-mode {
+	color: var(--dark-text-color);
+}
+
+featured-text-card span.dark-mode {
+	background: var(--dark-third-color);
+	color: var(#ffffff);
 }
 
 .social_icons.dark-mode {
